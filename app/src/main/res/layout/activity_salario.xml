@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="#1a1b2e">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Salário"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:padding="16dp"
+        android:background="#6A1B9A"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu salário"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif" />
+
+    <EditText
+        android:id="@+id/edsalario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="R$ 0,00"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="#2d2d44"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="32dp"
+        android:elevation="2dp"
+        android:fontFamily="sans-serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qual seu percentual?"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2d2d44"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="32dp">
+
+        <RadioGroup
+            android:id="@+id/rgopcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_neg30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30% de redução"
+                android:textSize="16sp"
+                android:textColor="#FF6B6B"
+                android:paddingVertical="12dp"
+                android:buttonTint="#FF6B6B"
+                android:fontFamily="sans-serif" />
+
+            <RadioButton
+                android:id="@+id/rb_neg15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15% de redução"
+                android:textSize="16sp"
+                android:textColor="#FF6B6B"
+                android:paddingVertical="12dp"
+                android:buttonTint="#FF6B6B"
+                android:fontFamily="sans-serif" />
+
+            <RadioButton
+                android:id="@+id/rb20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20% de aumento"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:paddingVertical="12dp"
+                android:buttonTint="#FFFFFF"
+                android:fontFamily="sans-serif" />
+
+            <RadioButton
+                android:id="@+id/rb40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="40% de aumento"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:paddingVertical="12dp"
+                android:buttonTint="#FFFFFF"
+                android:fontFamily="sans-serif" />
+
+            <RadioButton
+                android:id="@+id/rb60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60% de aumento"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:paddingVertical="12dp"
+                android:buttonTint="#FFFFFF"
+                android:fontFamily="sans-serif" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btcalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Novo Salário"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="16dp"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout>
